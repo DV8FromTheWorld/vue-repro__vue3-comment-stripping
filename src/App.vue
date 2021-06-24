@@ -5,7 +5,13 @@
     <br />If there is something to display it will appear below here.
 
     <ErrorBoundary>
-      <!-- Put testing code in here if required -->
+      <SlottableComponent>
+        <!-- Comment that should be stripped -->
+        <div>
+          Hello World!
+        </div>
+        <!-- Another comment to strip out -->
+      </SlottableComponent>
     </ErrorBoundary>
   </div>
 </template>
@@ -13,10 +19,13 @@
 <script>
   import ErrorBoundary from './components/ErrorBoundary'
 
+  import SlottableComponent from './components/SlottableComponent'
+
   export default {
     name: 'App',
     components: {
       ErrorBoundary,
+      SlottableComponent
     }
   }
 </script>
